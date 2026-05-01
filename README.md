@@ -1,37 +1,40 @@
-# Melisa Portfolio
+# Melisa Mehrübeoğlu Portfolio
 
-This is my personal portfolio website, built to showcase my projects, skills, education, and contact information as a Software Engineering student.
+Personal portfolio website showcasing my software engineering background, technical skills, projects, internship experience, certificates, and contact information.
 
-## 🌐 Live Website
+## Live Website
 
 [View Portfolio](https://melisamhrbglu.github.io/melisa-portfolio/)
 
-## 🛠️ Built With
+## Built With
 
 - React
 - Vite
 - JavaScript
 - HTML5
 - CSS3
-- GitHub Pages
 
-## 📌 Sections
+## Sections
 
+- Hero
 - About
-- Skills
-- Projects
+- Technical Skills
+- Engineering Projects
+- Engineering Approach
+- Internship Experience
+- Certificates
 - Contact
 
-## 🚀 Projects Featured
+## Featured Projects
 
 - Municipality Smart City Application
-- Quadcopter Real-Time Simulation
-- Pharmacy Website
+- Quadcopter Motion Control
 - Personal Portfolio Website
+- Academic and system-focused software engineering projects
 
-## 📫 Contact
+## Contact
 
-You can reach me through the contact section on my portfolio website.
+For contact information, visit the portfolio website.
 
 ---
 
