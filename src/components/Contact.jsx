@@ -27,8 +27,8 @@ function Contact() {
         <h2>Let’s Connect</h2>
 
         <p className="contact-description">
-          I’m open to internship opportunities, junior software roles,
-          front-end projects, and professional collaborations.
+          I’m open to new work opportunities, software engineering roles,
+          front-end development projects, and professional collaborations.
         </p>
 
         <div className="contact-buttons">

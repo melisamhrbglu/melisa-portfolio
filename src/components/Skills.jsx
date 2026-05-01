@@ -24,14 +24,15 @@ function Skills() {
       ],
     },
     {
-      title: "Tools & Workflow",
-      description: "Tools I use for development, testing, and design workflow.",
-      skills: [
-        { icon: "🔗", name: "Git / GitHub" },
-        { icon: "📡", name: "Postman" },
-        { icon: "🎯", name: "Figma" },
-      ],
-    },
+  title: "Tools & Workflow",
+  description: "Tools I use for development, testing, deployment, and design workflow.",
+  skills: [
+    { icon: "🔗", name: "Git / GitHub" },
+    { icon: "⚡", name: "Vite" },
+    { icon: "📡", name: "Postman" },
+    { icon: "🎯", name: "Figma" },
+  ],
+},
   ];
 
   return (
