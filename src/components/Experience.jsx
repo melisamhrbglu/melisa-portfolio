@@ -24,8 +24,8 @@ function Experience() {
       <h2 className="section-title">Internship Experience</h2>
 
       <p className="experience-intro">
-        Practical front-end and mobile development experience gained through a
-        real-world smart city application project.
+        Completed a software engineering internship focused on front-end and mobile development
+        for a real-world smart city application project.
       </p>
 
       <div className="experience-container">
@@ -44,8 +44,9 @@ function Experience() {
 
           <p className="experience-summary">
             Worked on the front-end development of a mobile smart city application,
-            focusing on UI implementation, usability improvements, navigation
-            structure, multilingual support, and responsive mobile screens.
+            focusing on UI implementation, navigation structure, multilingual support, 
+            responsive screens, API integration, and usability improvements.
+        
           </p>
 
           <div className="experience-tech">

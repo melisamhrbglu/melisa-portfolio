@@ -36,7 +36,7 @@ function Certificates() {
 
       <p className="certificates-intro">
         Workshops and seminars that support my interest in artificial
-        intelligence, data science, security, and modern digital technologies.
+        intelligence, data science, and emerging digital technologies.
       </p>
 
       <div className="certificates-grid">

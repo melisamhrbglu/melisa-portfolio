@@ -28,7 +28,7 @@ function Contact() {
 
         <p className="contact-description">
           I’m open to new work opportunities, software engineering roles,
-          front-end development projects, and professional collaborations.
+          front-end development projects, and collaborations where I can contribute, learn, and grow.
         </p>
 
         <div className="contact-buttons">

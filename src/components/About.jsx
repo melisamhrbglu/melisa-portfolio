@@ -5,22 +5,22 @@ function About() {
     {
       icon: "💡",
       title: "UI/UX-Focused Development",
-      text: "Designing clean, user-friendly, and responsive interfaces.",
+      text: "Designing accessible interfaces with clarity, usability, and user needs in mind.",
     },
     {
       icon: "🧠",
-      title: "Structured Problem Solving",
-      text: "Breaking complex tasks into clear and manageable steps.",
+      title: "Structured Development",
+      text: "Turning ideas into organized development steps and maintainable solutions.",
     },
     {
       icon: "🧩",
-      title: "Component-Driven Design",
-      text: "Building reusable components for scalable front-end projects.",
+      title: "Component-Based Design",
+      text: "Creating reusable UI components for scalable and consistent front-end projects.",
     },
     {
       icon: "⚡",
-      title: "Performance-Oriented Approach",
-      text: "Improving usability, structure, and overall application flow.",
+      title: "Practical Problem Solving",
+      text: "Improving application flow, responsiveness, and usability through practical solutions.",
     },
   ];
 
@@ -31,22 +31,22 @@ function About() {
       <div className="about-content">
         <div className="about-left">
           <p>
-            I am a Software Engineering student with a strong interest in
-            front-end development, mobile applications, and creating practical
-            digital solutions with clean and user-friendly interfaces.
+            I am a Software Engineer with a focus on front-end and mobile
+            application development. I enjoy creating digital products that are
+            clear, functional, and easy to interact with.
           </p>
 
           <p>
-            My work focuses on building responsive layouts, reusable UI
-            components, and structured React-based applications that are easy to
-            maintain and improve over time.
+            My development approach is shaped by software engineering principles
+            and practical UI implementation. I care about writing organized code,
+            building reusable structures, and improving the user experience through
+            thoughtful interface design.
           </p>
 
           <p>
-            During my internship at Gazimağusa Municipality, I contributed to a
-            smart city application by working on front-end development,
-            interface design, usability improvements, and real-world application
-            features.
+            Through my internship and academic projects, I gained hands-on
+            experience with React, React Native, navigation systems, API integration,
+            multilingual support, and mobile application testing.
           </p>
         </div>
 

@@ -24,13 +24,13 @@ function Skills() {
       ],
     },
     {
-  title: "Tools & Workflow",
-  description: "Tools I use for development, testing, deployment, and design workflow.",
-  skills: [
-    { icon: "🔗", name: "Git / GitHub" },
-    { icon: "⚡", name: "Vite" },
-    { icon: "📡", name: "Postman" },
-    { icon: "🎯", name: "Figma" },
+      title: "Tools & Workflow",
+      description: "Tools I use for development, testing, deployment, and design workflow.",
+      skills: [
+        { icon: "🔗", name: "Git / GitHub" },
+        { icon: "⚡", name: "Vite" },
+        { icon: "📡", name: "Postman" },
+        { icon: "🎯", name: "Figma" },
   ],
 },
   ];
@@ -40,8 +40,8 @@ function Skills() {
       <h2 className="section-title">Technical Skills</h2>
 
       <p className="skills-intro">
-        Technologies and tools I use to build responsive web and mobile
-        interfaces with clean structure and practical development workflow.
+        Technologies and tools I use to develop responsive interfaces,
+        manage front-end workflows, and build practical web and mobile application projects.
       </p>
 
       <div className="skills-grid">

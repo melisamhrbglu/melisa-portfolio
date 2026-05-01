@@ -12,7 +12,7 @@ function Projects() {
 
       <p className="projects-intro">
         A selection of academic, front-end, mobile, and system-focused projects
-        that reflect my software engineering background and practical development experience.
+        that demonstrate my software engineering foundation, technical problem-solving, and practical development experience.
       </p>
 
       <div className="projects-block">
