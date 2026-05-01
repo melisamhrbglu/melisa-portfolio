@@ -1,0 +1,53 @@
+import Section from "./Section";
+
+function EngineeringApproach() {
+  const approaches = [
+    {
+      icon: "01",
+      title: "Problem-First Thinking",
+      text: "I focus on understanding the real problem before moving into implementation. A clear problem definition helps me build cleaner and more practical solutions.",
+    },
+    {
+      icon: "02",
+      title: "Scalable & Maintainable Code",
+      text: "I aim to write readable, modular, and reusable code that can be improved over time without becoming difficult to manage.",
+    },
+    {
+      icon: "03",
+      title: "Iterative Development",
+      text: "I prefer building step by step, testing ideas early, and refining solutions through feedback instead of overcomplicating the first version.",
+    },
+    {
+      icon: "04",
+      title: "Continuous Learning",
+      text: "I actively improve my technical foundation by practicing, exploring modern development tools, and learning from real project experience.",
+    },
+  ];
+
+  return (
+    <Section id="engineering" className="engineering-section">
+      <h2 className="section-title">Engineering Approach</h2>
+
+      <p className="engineering-intro">
+        My development approach is based on understanding problems clearly,
+        building structured solutions, and improving projects through clean,
+        practical, and maintainable implementation.
+      </p>
+
+      <div className="engineering-container">
+        {approaches.map((item, index) => (
+          <div className="engineering-card" key={index}>
+            <span className="engineering-number">{item.icon}</span>
+
+            <div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+export default EngineeringApproach;
