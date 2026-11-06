@@ -1,3 +1,4 @@
+
 import graduationPhoto from "../assets/grad3.png";
 
 function Hero() {
@@ -25,8 +26,12 @@ function Hero() {
               View My Projects
             </a>
 
-            <a href="#contact" className="hero-button secondary">
-              Dowload CV
+            <a
+              href={`${import.meta.env.BASE_URL}001 Melisa Mehrübeoğlu CV.pdf`}
+              className="hero-button secondary"
+              download="001 Melisa Mehrübeoğlu CV.pdf"
+            >
+              Download CV
             </a>
           </div>
         </div>
