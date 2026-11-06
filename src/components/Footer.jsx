@@ -4,13 +4,18 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>© {currentYear} Melisa Mehrübeoğlu. All rights reserved.</p>
+        <p>
+          © {currentYear} Melisa Mehrübeoğlu. All rights reserved.
+        </p>
 
-        <div className="footer-links">
+        <nav
+          className="footer-links"
+          aria-label="Social and contact links"
+        >
           <a
-            href="https://www.linkedin.com/in/melisamhrbglu/"
+            href="https://www.linkedin.com/in/melisa-m-26976811b/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
@@ -18,7 +23,7 @@ function Footer() {
           <a
             href="https://github.com/melisamhrbglu"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -26,7 +31,7 @@ function Footer() {
           <a href="mailto:mehrubeoglumelisa@hotmail.com">
             Email
           </a>
-        </div>
+        </nav>
       </div>
     </footer>
   );

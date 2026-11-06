@@ -3,52 +3,77 @@ import Section from "./Section";
 function Certificates() {
   const certificates = [
     {
-      title: "AI-Powered Visual Generation & Effective Prompt Design",
-      type: "Webinar",
-      provider: "Online webinar focused on AI-based visual generation and effective prompt design.",
-      date: "12/03/2026",
-    },
-    {
-      title: "AI Usage Workshop",
-      type: "Webinar",
-      provider: "Online training delivered by AI Engineer İclal Çetin.",
-      date: "06/11/2024",
-    },
-    {
-      title: "Data Science and the Future of AI",
-      type: "Webinar",
-      provider:
-        "Online seminar delivered by Apple Lead Data Scientist and AI Specialist Mehmet Halil Başaranoğlu.",
-      date: "30/10/2024",
+      title: "Artificial Intelligence Summit ’26",
+      type: "Summit",
+      description:
+        "Attended sessions on Google Cloud and generative AI, AI agents, AWS-based AI solutions, scalable AI systems, cloud technologies, and AI-assisted software development.",
+      date: "May 2, 2026",
+      dateTime: "2026-05-02",
     },
     {
       title: "AI Security Webinar",
       type: "Webinar",
-      provider:
-        "Webinar delivered by Yunus Aydın, Application Security Engineer at Trendyol Group.",
-      date: "04/12/2025",
+      description:
+        "Gained an introduction to AI security through a session delivered by Yunus Aydın, Application Security Engineer at Trendyol Group.",
+      date: "December 4, 2025",
+      dateTime: "2025-12-04",
+    },
+    {
+      title: "AI-Powered Visual Generation & Effective Prompt Design",
+      type: "Webinar",
+      description:
+        "Learned about AI-supported visual generation and the principles of writing more effective prompts.",
+      date: "2025",
+      dateTime: "2025",
+    },
+    {
+      title: "AI Usage Workshop",
+      type: "Workshop",
+      description:
+        "Explored practical approaches to using artificial intelligence in a workshop led by AI Engineer İclal Çetin.",
+      date: "November 6, 2024",
+      dateTime: "2024-11-06",
+    },
+    {
+      title: "Data Science and the Future of AI",
+      type: "Seminar",
+      description:
+        "Gained insight into data science and the future development of artificial intelligence through a seminar delivered by Mehmet Halil Başaranoğlu.",
+      date: "October 30, 2024",
+      dateTime: "2024-10-30",
     },
   ];
 
   return (
     <Section id="certificates" className="certificates-section">
-      <h2 className="section-title">Certificates</h2>
+      <h2 className="section-title">Professional Development</h2>
 
       <p className="certificates-intro">
-        Workshops and seminars that support my interest in artificial
-        intelligence, data science, and emerging digital technologies.
+        A record of continued learning beyond academic coursework and ongoing 
+        engagement with developments in technology.
       </p>
 
       <div className="certificates-grid">
-        {certificates.map((certificate, index) => (
-          <article className="certificate-card" key={index}>
+        {certificates.map((certificate) => (
+          <article
+            className="certificate-card"
+            key={certificate.title}
+          >
             <div className="certificate-top">
-              <span className="certificate-type">{certificate.type}</span>
-              <span className="certificate-date">{certificate.date}</span>
+              <span className="certificate-type">
+                {certificate.type}
+              </span>
+
+              <time
+                className="certificate-date"
+                dateTime={certificate.dateTime}
+              >
+                {certificate.date}
+              </time>
             </div>
 
             <h3>{certificate.title}</h3>
-            <p>{certificate.provider}</p>
+            <p>{certificate.description}</p>
           </article>
         ))}
       </div>

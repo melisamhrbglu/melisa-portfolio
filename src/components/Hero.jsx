@@ -1,30 +1,24 @@
-import profilePhoto from "../assets/profile-photo.jpeg";
+import graduationPhoto from "../assets/grad3.png";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero" id="home" aria-labelledby="hero-title">
       <div className="hero-container">
         <div className="hero-content">
-          <p className="hero-intro">Hello, I'm</p>
+          <p className="hero-eyebrow">Hello, I&apos;m</p>
 
-          <h1 className="hero-title">
+          <h1 className="hero-title" id="hero-title">
             Melisa Mehrübeoğlu
           </h1>
 
-          <h2 className="hero-subtitle">
-            Software Engineer | Front-End & Mobile App Developer
-          </h2>
-
-          <p className="hero-description">
-            I build modern web and mobile interfaces that combine clear design,
-            practical functionality, and a smooth user experience.
+          <p className="hero-subtitle">
+            Software Engineer · Frontend &amp; Mobile Developer
           </p>
 
-          <div className="hero-highlights">
-            <p>BSc in Software Engineering — Eastern Mediterranean University</p>
-            <p>React, JavaScript, HTML, CSS & Responsive UI Development</p>
-            <p>React Native, API Integration & Mobile App Project Experience</p>
-          </div>
+          <p className="hero-description">
+            Turning ideas into reliable, user-focused software through structured
+            development and practical problem-solving.
+          </p>
 
           <div className="hero-buttons">
             <a href="#projects" className="hero-button primary">
@@ -32,7 +26,7 @@ function Hero() {
             </a>
 
             <a href="#contact" className="hero-button secondary">
-              Contact Me
+              Dowload CV
             </a>
           </div>
         </div>
@@ -40,8 +34,8 @@ function Hero() {
         <div className="hero-image-wrapper">
           <div className="hero-image-card">
             <img
-              src={profilePhoto}
-              alt="Melisa Mehrübeoğlu"
+              src={graduationPhoto}
+              alt="Melisa Mehrübeoğlu celebrating her Software Engineering graduation"
               className="hero-image"
             />
           </div>

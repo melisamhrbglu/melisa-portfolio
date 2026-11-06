@@ -3,36 +3,41 @@ import Section from "./Section";
 function Skills() {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      description: "Building responsive and user-friendly interfaces.",
+      title: "Programming & Web Fundamentals",
+      description:
+        "Programming languages and foundational technologies used across my software projects.",
       skills: [
-        { icon: "⚛️", name: "React" },
-        { icon: "📱", name: "React Native" },
-        { icon: "🟦", name: "TypeScript" },
-        { icon: "🟨", name: "JavaScript" },
-        { icon: "🌐", name: "HTML" },
-        { icon: "🎨", name: "CSS" },
-        { icon: "📐", name: "Responsive Design" },
-        { icon: "🔌", name: "REST API Integration" },
+        { icon: "JS", name: "JavaScript", tone: "javascript" },
+        { icon: "TS", name: "TypeScript", tone: "typescript" },
+        { icon: "Py", name: "Python", tone: "python" },
+        { icon: "<>", name: "HTML5", tone: "html" },
+        { icon: "{ }", name: "CSS3", tone: "css" },
       ],
     },
     {
-      title: "Programming & Backend Basics",
-      description: "Core programming knowledge and backend fundamentals.",
+      title: "Web & Mobile Development",
+      description:
+        "Technologies and practices used to build responsive web interfaces and cross-platform mobile applications.",
       skills: [
-        { icon: "🐍", name: "Python" },
+        { icon: "⚛", name: "React", tone: "react" },
+        { icon: "RN", name: "React Native / Expo", tone: "native" },
+        { icon: "↔", name: "Responsive Web Design", tone: "responsive" },
+        { icon: "API", name: "REST API Integration", tone: "api" },
       ],
     },
     {
       title: "Tools & Workflow",
-      description: "Tools I use for development, testing, deployment, and design workflow.",
+      description:
+        "Tools and practices supporting development, version control, testing, collaboration, and design.",
       skills: [
-        { icon: "🔗", name: "Git / GitHub" },
-        { icon: "⚡", name: "Vite" },
-        { icon: "📡", name: "Postman" },
-        { icon: "🎯", name: "Figma" },
-  ],
-},
+        { icon: "Git", name: "Git / GitHub", tone: "github" },
+        { icon: "V", name: "Vite", tone: "vite" },
+        { icon: "API", name: "Postman", tone: "postman" },
+        { icon: "F", name: "Figma", tone: "figma" },
+        { icon: "QA", name: "Manual Testing", tone: "testing" },
+        { icon: "A", name: "Agile / Scrum", tone: "agile" },
+      ],
+    },
   ];
 
   return (
@@ -40,27 +45,33 @@ function Skills() {
       <h2 className="section-title">Technical Skills</h2>
 
       <p className="skills-intro">
-        Technologies and tools I use to develop responsive interfaces,
-        manage front-end workflows, and build practical web and mobile application projects.
+        Technologies, tools, and development practices I have used across
+        web, mobile, and software engineering projects.
       </p>
 
       <div className="skills-grid">
-        {skillCategories.map((category, index) => (
-          <div className="skills-card" key={index}>
+        {skillCategories.map((category) => (
+          <article className="skills-card" key={category.title}>
             <div className="skills-card-header">
               <h3>{category.title}</h3>
               <p>{category.description}</p>
             </div>
 
             <div className="skills-list">
-              {category.skills.map((skill, skillIndex) => (
-                <div className="skill-pill" key={skillIndex}>
-                  <span className="skill-icon">{skill.icon}</span>
+              {category.skills.map((skill) => (
+                <div className="skill-pill" key={skill.name}>
+                  <span
+                    className={`skill-icon skill-icon--${skill.tone}`}
+                    aria-hidden="true"
+                  >
+                    {skill.icon}
+                  </span>
+
                   <span>{skill.name}</span>
                 </div>
               ))}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </Section>

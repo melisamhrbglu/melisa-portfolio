@@ -14,8 +14,8 @@ function Contact() {
     },
     {
       label: "LinkedIn",
-      detail: "linkedin.com/in/melisamhrbglu",
-      href: "https://www.linkedin.com/in/melisamhrbglu/",
+      detail: "linkedin.com/in/melisa-m-26976811b",
+      href: "https://www.linkedin.com/in/melisa-m-26976811b/",
     },
   ];
 
@@ -27,23 +27,28 @@ function Contact() {
         <h2>Let’s Connect</h2>
 
         <p className="contact-description">
-          I’m open to new work opportunities, software engineering roles,
-          front-end development projects, and collaborations where I can contribute, learn, and grow.
+          I’m open to software engineering opportunities where I can apply my skills, 
+          gain further experience, and contribute to real-world projects.
+
         </p>
 
         <div className="contact-buttons">
-          {contactLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="contact-btn"
-              target={link.href.startsWith("mailto") ? "_self" : "_blank"}
-              rel="noreferrer"
-            >
-              <span>{link.label}</span>
-              <small>{link.detail}</small>
-            </a>
-          ))}
+          {contactLinks.map((link) => {
+            const isExternalLink = link.href.startsWith("http");
+
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className="contact-btn"
+                target={isExternalLink ? "_blank" : undefined}
+                rel={isExternalLink ? "noopener noreferrer" : undefined}
+              >
+                <span>{link.label}</span>
+                <small>{link.detail}</small>
+              </a>
+            );
+          })}
         </div>
       </div>
     </Section>

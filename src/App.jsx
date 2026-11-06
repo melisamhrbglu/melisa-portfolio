@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollButtons from "./components/ScrollButtons";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Experience/>
         <Certificates/>
         <Contact />
+        <ScrollButtons/>
       </main>
 
       <Footer />

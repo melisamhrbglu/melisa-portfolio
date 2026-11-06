@@ -3,24 +3,34 @@ import Section from "./Section";
 function EngineeringApproach() {
   const approaches = [
     {
-      icon: "01",
-      title: "Problem-First Thinking",
-      text: "I focus on understanding the real problem before moving into implementation, so each solution is built with a clear purpose.",
+      number: "01",
+      title: "Understand the Problem",
+      text: "Clarify the project’s purpose, intended users, requirements, and constraints to establish a clear direction from the beginning.",
     },
     {
-      icon: "02",
-      title: "Scalable & Maintainable Code",
-      text: "I aim to write readable, modular, and reusable code that can be extended and improved over time.",
+      number: "02",
+      title: "Plan the Structure",
+      text: "Break the solution into manageable components and define how its data, features, and interfaces should work together.",
     },
     {
-      icon: "03",
-      title: "Iterative Development",
-      text: "I prefer building step by step, testing ideas early, and refining solutions through feedback and continous improvement.",
+      number: "03",
+      title: "Build Incrementally",
+      text: "Develop the project in smaller stages, keeping each part organized, reusable, and easier to maintain as the solution evolves.",
     },
     {
-      icon: "04",
-      title: "Continuous Learning",
-      text: "I continue to strengthen my technical foundation by practicing, exploring modern tools, and learning through real project experience.",
+      number: "04",
+      title: "Test & Validate",
+      text: "Evaluate features throughout development using expected and unexpected scenarios to identify issues before they affect the wider system.",
+    },
+    {
+      number: "05",
+      title: "Refine the Experience",
+      text: "Use testing results and feedback to improve functionality, interface consistency, responsiveness, and the overall user experience.",
+    },
+    {
+      number: "06",
+      title: "Document & Learn",
+      text: "Review the completed work for clarity and maintainability, document important decisions, and apply the lessons learned to future projects.",
     },
   ];
 
@@ -29,23 +39,25 @@ function EngineeringApproach() {
       <h2 className="section-title">Engineering Approach</h2>
 
       <p className="engineering-intro">
-        My engineering approach is based on understanding problems clearly,
-        building structured solutions, and improving projects through practical,
-        maintainable, and user-focused implementation.
+        I approach development as a structured and iterative process—from
+        understanding the problem and planning the solution to implementation,
+        testing, refinement, and review.
       </p>
 
-      <div className="engineering-container">
-        {approaches.map((item, index) => (
-          <div className="engineering-card" key={index}>
-            <span className="engineering-number">{item.icon}</span>
+      <ol className="engineering-container">
+        {approaches.map((item) => (
+          <li className="engineering-card" key={item.number}>
+            <span className="engineering-number" aria-hidden="true">
+              {item.number}
+            </span>
 
             <div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </Section>
   );
 }
